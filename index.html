@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Student Management System</h1>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Students List -->
+            <div class="students-section">
+                <h2>Students List</h2>
+                <div class="students-grid" id="studentsGrid">
+                    <!-- Students will be displayed here -->
+                </div>
+            </div>
+
+            <!-- Add/Edit Form -->
+            <div class="form-section">
+                <h2 id="formTitle">Add New Student</h2>
+                <form id="studentForm">
+                    <div class="form-group">
+                        <label for="studentName">Student Name:</label>
+                        <input type="text" id="studentName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentAge">Age:</label>
+                        <input type="number" id="studentAge" min="1" max="100" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentGrade">Grade:</label>
+                        <select id="studentGrade" required>
+                            <option value="">Select Grade</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="F">F</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentSubject">Subject:</label>
+                        <input type="text" id="studentSubject" required>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit" id="submitBtn">Add Student</button>
+                        <button type="button" id="cancelBtn" style="display: none;">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
